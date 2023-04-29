@@ -1,12 +1,8 @@
 import sys 
-
-
-
 sys.stdin=open("./in.txt","r")
 sys.stdout=open("./out.txt","w")
-
-
 t=int(input())
+
 for i in range(t):
     s,t=input().split(",")
     dic1, dic2 = {}, {}
