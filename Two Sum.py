@@ -5,15 +5,11 @@ t=int(input())
 
 for i in range(t):
     target=int(input())
-    nums=input().split(",")
-    nums=[int(num) for num in nums]
-    for index,j in enumerate(nums):
-        rest=target-j
-        if rest in nums[index+1:]:
-            newnums=nums[index+1:]
-            if (rest== j):
-                print(index,newnums.index(rest)+1+index)
-            else :
-                print(index,nums.index(rest))
-            break
-        
+    nums=[int(i) for i in input().split(",")]
+    if len(nums) == 2: print([0,1])
+    else:
+        for i,j in enumerate(nums):
+            if (target-j) in nums[i+1:]:
+                print([i,nums.index(target-j,i+1)])
+                break
+            else: continue
