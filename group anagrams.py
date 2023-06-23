@@ -5,21 +5,10 @@ t=int(input())
 
 for i in range(t):
     strs=input().split(",")
-    tab=[]
-    if strs==[""]:
-        print(tab)
-    elif len(strs)==1:
-        tab=[[strs[0]]]
-        print(tab)
-    else : 
-        h = {}
-        for word in strs:
-            sortedWord = ''.join(sorted(word))
-            if sortedWord not in h:
-                h[sortedWord] = [word]
-            else:
-                h[sortedWord].append(word)
-        final = []
-        for value in h.values():
-            final.append(value)
-        print (final)        
+    if len(strs) == 1 or len(strs)==0: print([strs])
+    h=dict()
+    for i in strs:
+        if (h.get(''.join(sorted(i)))== None): 
+            h[''.join(sorted(i))]=[i]
+        else : h[''.join(sorted(i))].append(i)
+    print(list(h.values()))
