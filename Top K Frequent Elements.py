@@ -13,3 +13,4 @@ for i in range(t):
         else : h[i]+=1
     l=sorted(h.items(),key=lambda x: x[1],reverse=True)
     print([i[0] for i in l[:k]])
+    
