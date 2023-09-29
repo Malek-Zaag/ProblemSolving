@@ -30,7 +30,6 @@ BUFSIZE = 4096
 def solve():
     n = list(map(int, input().split()))
     res = 0
-
     print(res)
 
 
