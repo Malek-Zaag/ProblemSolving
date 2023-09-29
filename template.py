@@ -27,9 +27,8 @@ BUFSIZE = 4096
 ############################################# Solution ######################################################
 
 import sys 
-sys.stdin=open("./in.txt","r")
-sys.stdout=open("./out.txt","w")
-t=int(input())
+sys.stdin=open("./Leetcode/in.txt","r")
+sys.stdout=open("./Leetcode/out.txt","w")
 
 
 
