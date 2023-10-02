@@ -7,22 +7,21 @@ sys.stdout=open("./Leetcode/out.txt","w")
 def solve():
     a,b =input().split(",")
     res=""
-    min_l=min(len(a),len(b))
-    lock=0
-    for i in range(min_l-1,0):
-        if  a[i] =="1" and b[i]=="0" and lock==0:
-            res= "1"+res
-        elif a[i] =="1" and b[i]=="0" and lock==0 :
-            res= "0"+res
-        elif a[i] =="1" and b[i]=="1" and lock==0 :
-            res= "0"+res
-            lock=1
-        if  a[i] =="1" and b[i]=="0" and lock==0:
-            res= "1"+res
-        elif a[i] =="1" and b[i]=="0" and lock==0 :
-            res= "0"+res
-            
-    print(res)
+    carry=0
+    a=a[::-1]
+    b=b[::-1]
+    for i in range(max(len(a),len(b))):
+        digitA=ord(a[i]) - ord("0") if i < len(a) else 0
+        digitB=ord(b[i]) - ord("0") if i < len(b) else 0
+        
+        chr=str((digitA + digitB + carry) % 2)
+        res= chr + res
+        carry= (digitA + digitB + carry) //2 
+    if carry:
+        res = "1" + res
+        
+              
+    return res
 
 
 for _ in range(int(input())):
