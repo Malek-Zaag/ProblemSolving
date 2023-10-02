@@ -1,3 +1,5 @@
-2
-abcd,abcde
-,y
+4
+AAABABB
+AA
+ABBBBBBBAAA
+AAABABB

@@ -1,2 +1,4 @@
-e
-y
+True
+False
+False
+True
