@@ -1,4 +1,4 @@
 3
-abc pqr
-ab pqrs
-abcd pq
+ABCABC ABC
+ABABAB ABAB
+LEET CODE
