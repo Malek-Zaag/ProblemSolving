@@ -1,6 +1,2 @@
-aabbccc
-7
-a
+2
 1
-abbbbbbbbbbbb
-13
