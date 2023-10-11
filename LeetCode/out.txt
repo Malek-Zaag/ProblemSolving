@@ -1,4 +1,6 @@
-True
-False
-True
-True
+aabbccc
+7
+a
+1
+abbbbbbbbbbbb
+13
