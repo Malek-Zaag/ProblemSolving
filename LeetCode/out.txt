@@ -1,2 +1,4 @@
-holle 
-leotcede
+True
+False
+True
+True
