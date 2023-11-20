@@ -13,3 +13,4 @@ for i in range(t):
                 print([i,nums.index(target-j,i+1)])
                 break
             else: continue
+            
