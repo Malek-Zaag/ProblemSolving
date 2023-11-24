@@ -8,7 +8,6 @@ sys.stdout=open("./Leetcode/out.txt","w")
 def solve():
     k=int(input())
     s=input()
-    l=r=0
     curr=maxi=0
     for r in range(len(s)):
         if r >= k:
