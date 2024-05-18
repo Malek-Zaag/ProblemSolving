@@ -5,8 +5,7 @@
 #
 
 # @lc code=start
-from itertools import count
-import re
+
 import collections
 
 class Solution:
