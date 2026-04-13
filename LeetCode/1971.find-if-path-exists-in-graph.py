@@ -29,8 +29,6 @@ class Solution:
                         return True
             return False      
         visited=set()
-        return dfs(source,visited)
-
-Solution().validPath(3,[[0,1],[1,2],[2,0]],0,2)
+        return dfs(source,visited)  
 # @lc code=end
 
