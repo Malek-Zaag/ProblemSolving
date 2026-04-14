@@ -26,17 +26,22 @@ BUFSIZE = 4096
 
 ############################################# Solution ######################################################
 
-import sys 
-sys.stdin=open("./Leetcode/in.txt","r")
-sys.stdout=open("./Leetcode/out.txt","w")
+# import sys 
+# sys.stdin=open("./Leetcode/in.txt","r")
+# sys.stdout=open("./Leetcode/out.txt","w")
 
 
 
-def solve():
-    n = list(map(int, input().split()))
-    res = 0
-    print(res)
+# def solve():
+#     n = list(map(int, input().split()))
+#     res = 0
+#     print(res)
 
 
-for _ in range(int(input())):
-    print(solve())
+# for _ in range(int(input())):
+#     print(solve())
+    
+a= (x for x in range(10))
+print(a,type(a))    
+for i in a:
+    print(i)
