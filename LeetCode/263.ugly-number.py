@@ -18,7 +18,6 @@ class Solution:
         elif n % 2==0:
             return self.isUgly(n /2 )
         else:
-            return False
-        
+            return False  
 # @lc code=end
 
