@@ -7,8 +7,6 @@
 # @lc code=start
 class Solution:
     def findComplement(self, num: int) -> int:
-        
-        
         def helper(n):
             rep=""
             while (n >0):
