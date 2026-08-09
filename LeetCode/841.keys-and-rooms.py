@@ -10,16 +10,18 @@ import numpy
 
 class Solution:
     def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:
-        stack=[0]
-        visited=[False] * len(rooms)
-        visited[0]=True
+        visited = set([0])
+        stack = [0]
+
         while stack:
-            node=stack.pop()
-            for nei in rooms[node]:
-                if visited[nei]== False:
-                    visited[nei]=True
-                    stack.append(nei)
-        return all(visited)
+            room = stack.pop()
+
+            for key in rooms[room]:
+                if key not in visited:
+                    visited.add(key)
+                    stack.append(key)
+
+        return len(visited) == len(rooms)
         
         
 # @lc code=end
