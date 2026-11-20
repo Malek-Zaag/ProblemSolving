@@ -8,11 +8,14 @@
 class Solution:
     def removeElement(self, nums: list[int], val: int) -> int:
         res=0
+        arr = []
         for i in nums:
             if i == val: 
                 res+=1
-                nums[nums.index(i)] = "_"
-        return len(nums) - res
+            else :
+                arr.append(i) 
+        nums[:]=arr
+        return len(nums)
 # @lc code=end
 
 sol = Solution()
